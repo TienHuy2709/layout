@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+-->
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+
+
+    <referenceContainer name="main.content">
+        <block class="Magento\Framework\View\Element\Template" name="carol" as="carol" after="skip_to_content.target" template="Magento_Cms::index.phtml"/>
+    </referenceContainer>
+    <!--<referenceContainer name="content">
+
+        <block class="Magento\Cms\Block\Block" name="home-page-carosel-img-1">
+
+            <arguments>
+
+                <argument name="home-page-carosel" xsi:type="string">home-page-carosel-img-1</argument>
+
+            </arguments>
+
+        </block>
+
+    </referenceContainer>
+-->
+    <body/>
+</page>

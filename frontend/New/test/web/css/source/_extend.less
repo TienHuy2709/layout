@@ -1,0 +1,99 @@
+//  Fonts
+@font-family-name__perman: 'PermanentMarker';
+@font-family__perman: @font-family-name__perman, @font-family__sans-serif;
+
+@font-family-name__notosans: 'NotoSansSC';
+@font-family__notosan: @font-family-name__notosans, @font-family__sans-serif;
+
+@font-family-name__reggae: 'Reggae One';
+@font-family__reggae: @font-family-name__reggae, @font-family__sans-serif;
+
+//
+//  Sections variables
+//  _____________________________________________
+
+//
+//  Tabs
+//  ---------------------------------------------
+@tab-content__border-top-status: true;
+
+
+//
+//  Sidebar
+//  ---------------------------------------------
+
+@sidebar__background-color: @color-white-smoke; // Used in cart sidebar, Checkout sidebar, Tier Prices, My account navigation, Rating block background
+
+& when (@media-common = true) {
+    .header.content {
+        .logo {
+            position: absolute;
+            margin: 10px 0 0 0;
+            left: ~"calc(50% - 80px)";
+            top: 3px;
+            z-index: 6;
+
+            .page-print & {
+                display: inline-block;
+                float: none;
+            }
+        }
+    }
+
+    .page-footer {
+        background: red;
+    }
+    .footer {
+        &.content {
+            border-top: none;
+            margin-top: 0;
+            padding-bottom: 0;
+
+            .logo {
+                float: none;
+                position: relative;
+                top: 0;
+                margin: 0 0 10px 0;
+            }
+        }
+        &.links.address {
+            margin: 0;
+        }
+    }
+    .copyright {
+        text-align: center;
+        border-top: 1px solid #e6e2d5;
+        margin-top: 0 !important;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .footer-title {
+        font-weight: bold;
+        margin-bottom: 5px;
+    }
+
+    .cms-index-index {
+        .page-title-wrapper {
+            display: none;
+        }
+    }
+
+    .contact-item {
+        margin-bottom: 0 !important;
+    }
+    .price{
+        color: blue;
+    }
+    .page-header .panel.wrapper{
+        background: #cca7ae;
+        font-family: @font-family-name__notosans;
+        font-weight: 400;
+    }
+    .header.panel>.header.links>li a{
+        color: white;
+        font-family: @font-family__reggae;
+    }
+
+
+}
